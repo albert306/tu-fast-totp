@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "tu-fast-totp",
+    "version": "1.0",
+  
+    "description": "automates the required totp 2FA process on the TU-Dresden ZIH login ",
+  
+    "icons": {
+      "48": "icons/icon.png"
+    },
+
+    "permissions": ["activeTab"],
+  
+    "content_scripts": [
+      {
+        "matches": ["https://idp.tu-dresden.de/idp/profile/SAML2/Redirect/SSO?execution=e3s2"],
+        "js": ["totp.js"]
+      }
+    ]
+  }
+  
