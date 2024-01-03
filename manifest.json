@@ -6,15 +6,16 @@
     "description": "automates the required totp 2FA process on the TU-Dresden ZIH login ",
   
     "icons": {
-      "48": "icons/icon.png"
+      "48": "icons/icon-48.png"
     },
 
     "permissions": ["activeTab"],
   
     "content_scripts": [
       {
-        "matches": ["https://idp.tu-dresden.de/idp/profile/SAML2/Redirect/SSO?execution=e3s2"],
-        "js": ["totp.js"]
+        "matches": ["https://idp.tu-dresden.de/idp/profile/SAML2/Redirect/SSO*"],
+        "run_at": "document_idle",
+        "js": ["content_scripts/totp.js"]
       }
     ]
   }
