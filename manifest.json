@@ -9,8 +9,14 @@
       "48": "icons/icon-48.png"
     },
 
-    "permissions": ["activeTab"],
-  
+    "permissions": ["activeTab", "tabs"],
+
+    "browser_action": {
+      "default_icon": "icons/icon-48.png",
+      "default_title": "tu-fast-totp",
+      "default_popup": "popup/popup.html"
+    },
+
     "content_scripts": [
       {
         "matches": ["https://idp.tu-dresden.de/idp/profile/SAML2/Redirect/SSO*"],
