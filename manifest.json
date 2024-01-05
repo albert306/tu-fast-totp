@@ -15,14 +15,6 @@
       "default_icon": "icons/icon-48.png",
       "default_title": "tu-fast-totp",
       "default_popup": "popup/popup.html"
-    },
-
-    "content_scripts": [
-      {
-        "matches": ["https://idp.tu-dresden.de/idp/profile/SAML2/Redirect/SSO*"],
-        "run_at": "document_idle",
-        "js": ["content_scripts/totp.js"]
-      }
-    ]
+    }
   }
   
