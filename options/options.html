@@ -2,14 +2,21 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="options.css"/>
 </head>
 
 <body>
     <form>
-        <label for="secretToken">Secret Token: </label>
+        <label for="secretToken">secret token: </label>
         <input type="text" id="secretToken" style="width: 350px;">
         <button type="submit">Save</button>
     </form>
+    <div id="wrongFormat" class="hidden">
+        <span class="validationFailedMessage">secret token does not have correct format.</span>
+    </div>
+    <div id="saveSuccess" class="hidden">
+        <span class="successMessage">secret token was saved successfully.</span>
+    </div>
     <script src="options.js"></script>
 </body>
 

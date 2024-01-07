@@ -1,0 +1,15 @@
+body {
+    margin: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.validationFailedMessage {
+    color: rgb(255, 50, 50)
+}
+
+.successMessage {
+    color: rgb(0, 75, 0)
+}

@@ -6,7 +6,7 @@
     "description": "automates the required totp 2FA process on the TU-Dresden ZIH login ",
   
     "icons": {
-      "48": "icons/icon-48.png"
+      "48": "icons/icon.svg"
     },
 
     "permissions": ["activeTab", "tabs", "storage"],
