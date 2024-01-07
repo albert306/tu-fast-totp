@@ -17,7 +17,7 @@
 
     "browser_action": {
       "default_icon": "icons/icon.svg",
-      "default_title": "tu-fast-totp",
+      "default_title": "insert totp code",
       "default_popup": "popup/popup.html"
     }
   }

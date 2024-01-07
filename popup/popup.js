@@ -2,7 +2,7 @@ async function onExtensionClick() {
     var token = (await browser.storage.local.get()).secretToken
 
     if (!token) {
-        document.getElementById("totpCode").textContent = "no secret token found"
+        document.getElementById("totpCode").textContent = "no secret token found."
         return
     }
 
