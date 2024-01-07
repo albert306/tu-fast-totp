@@ -3,13 +3,13 @@
     "name": "tu-fast-totp",
     "version": "1.0",
   
-    "description": "automates the required totp 2FA process on the TU-Dresden ZIH login ",
+    "description": "automatically inserts totp code based on stored secret into 2FA process on TU-Dresden ZIH login ",
   
     "icons": {
       "48": "icons/icon.svg"
     },
 
-    "permissions": ["activeTab", "tabs", "storage"],
+    "permissions": ["activeTab", "storage"],
 
     "options_ui": {
       "page": "options/options.html"
