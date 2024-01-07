@@ -5,19 +5,11 @@ function enterTotp(code) {
 
     if (!totpInput || !submitButton) {
         return
-        // browser.tabs.sendMessage(tabs[0].id, {
-        //     command: "failed"
-        // })
     }
 
     totpInput.value = code
     submitButton.click()
-
-    // browser.tabs.sendMessage(tabs[0].id, {
-    //     command: "success"
-    // })
 }
-
 
 
 browser.runtime.onMessage.addListener((message) => {

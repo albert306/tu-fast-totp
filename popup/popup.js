@@ -23,7 +23,6 @@ async function onExtensionClick() {
         
 }
 
-browser.tabs.executeScript({file: "/content_scripts/codeInserter.js"})
+browser.tabs.executeScript({file: "/content_scripts/content_script.js"})
     .then(onExtensionClick)
-    // .catch(() => { console.log("failed to load") });
 
